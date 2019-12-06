@@ -1,0 +1,35 @@
+.Contents
+{	
+	font-size: 15px;
+
+}
+.main
+{
+	width: 600px;
+	height: 600px;
+	padding: 30px;
+
+}
+.preview
+{
+	width: 100px;
+	height: 100px;
+	border:2px solid;
+	position: relative;
+	right: -250px;
+}
+.preview:horver
+{
+	
+}
+
+.information
+{
+	margin-left:30px; 
+
+}
+/*************************/
+.Page
+{
+	align-self: center; 
+}
