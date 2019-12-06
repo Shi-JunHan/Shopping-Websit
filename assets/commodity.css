@@ -22,7 +22,6 @@
 .container
 {
   position: relative;
-
   top: 5px;
   padding:10px;
   text-align: center;
@@ -30,11 +29,19 @@
 }
 article h1
 {
-  font-size: 50px;
-  padding: 15px;
+  font-size: 60px;
+  padding: 1px;
   position: relative;
   right: -30px;
   color: pink;
+  font-weight: bold;
+}
+.container h3
+{
+  word-break: break-all;
+  font-size: 20px;
+  padding:15px;
+  text-align: center;
 }
 /******************************back to top*/
 #myBtn {
