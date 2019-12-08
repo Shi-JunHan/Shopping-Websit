@@ -43,6 +43,21 @@ article h1
   padding:15px;
   text-align: center;
 }
+/*商品圖片*/
+.item img{
+  transform:scale(1,1);transition: all 1s ease-out;
+  border:2px solid green; /*圖片邊框顏色*/
+}
+.item img:hover{
+  transform:scale(1.2,1.2);
+  color: red;
+  border:5px solid;
+}
+a/*超連結*/
+{
+  text-decoration:none;
+  color: black;
+}
 /******************************back to top*/
 #myBtn {
   display: none;

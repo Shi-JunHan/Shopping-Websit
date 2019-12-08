@@ -1,12 +1,11 @@
 body
 {
-	background-color:#f8f8d9;
+	background-color:white;
 }
 .logo
 {
-	width: 240px;
-	height: 120px;
-  padding: 0px;
+	width: 120px;
+	height: 90px;
 }
 .position
 {
@@ -26,7 +25,18 @@ body
 {
   background-color:white;
 }
+
 /**/
+.collapse 
+{
+  font-size:25px;
+  letter-spacing: 3px;
+  padding:10px;
+}
+.nav-item
+{
+  padding: 10px;
+}
 /*下拉選單nav******************************************/
 ul { /* 取消ul預設的內縮及樣式 */
   margin: 0;
