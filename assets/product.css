@@ -1,16 +1,39 @@
-.Contents
-{	
-	font-size: 15px;
-
-}
 .breadcrumb
 {
 	font-size: 20px;
 	text-align: center;
 	background-color: white;
 }
-/*************************/
-.main/*商品頁主圖*/
+/*圖片預覽************************/
+.column {
+	width: 200px;
+	height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Style the images inside the grid */
+.column img {   /*small img*/
+  opacity:0.7; 
+  cursor: pointer; 
+  width:auto;
+  height:auto;
+  text-align: center;
+  border:solid 4px black;
+}
+.column img:hover {
+  opacity: 1;
+}
+.row img:after
+{
+	width: 500px;
+	height: 500px;
+}
+.container {
+  position: relative;
+  display: block;
+}
+/***********************************/
+.main/*商品頁主圖-picture*/
 {
 	width: 550px;
 	height: 550px;
@@ -31,17 +54,108 @@
 	right: -250px;
 	transform:scale(1,1);
 	transition: all 1s ease-out;
+	margin-left: 5%;
 }
 .preview:horver{
 	transform:scale(1.2,1.2);
 }
-
+/*商品頁-商品資訊*******************/
 .information h1
 {
   font-size:40px;
   color:green;
 }
-/*************************/
+.hope_btn
+{
+	font-size: 25px;
+	padding: 7px;
+	background-color: black;
+	color: white;
+	border-radius: 5%;
+}
+.hope_btn:active
+{
+  background-color:	#0000FF;
+}
+.buy_btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#AA0000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 400px;
+  height: 60px;
+}
+
+.buy_btn:hover {background-color: #3e8e41}
+
+.buy_btn:active {
+  background-color:	#0000FF;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/**tab選項**********************************************/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding:5px;
+  margin-left:100px;
+  margin-right:100px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 30px 25px;
+  border: 1px solid #ccc;
+  border-top: none;
+  margin-left:100px;
+  margin-right:100px;
+  padding: 5px;
+}
+.tabcontent p,h3
+{
+  padding: 8px 35px;
+}
+.tabcontent img
+{
+	width: 1050px;
+	height: 700px;
+	text-align: center;
+	padding: 20px 40px;
+}
+/**/
 .Page
 {
 	align-self: center; 
