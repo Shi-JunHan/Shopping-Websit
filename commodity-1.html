@@ -19,7 +19,7 @@
 	</head>
 	<!-- ********************************************************************************** -->
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" class="header" id="myHeader">
 		  <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -96,13 +96,48 @@
 
 <!--article******************************************************-->
 <article>
-	<div class="Contents"><a href="index.html">首頁</a>/全部商品/<a href="commodity-1.html">鋼筆</a></div>
-	<h1>&diams;鋼筆</h1>
-     <div class="container">
+  	<div class="Contents"><a href="index.html">首頁</a>/全部商品/<a href="commodity-1.html">鋼筆</a></div>
+  <!--側邊欄位-->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">首頁</a>
+      <hr>
+      <a href="#">鋼筆</a>
+      <a href="#">鋼珠筆</a>
+      <a href="#">原子筆</a>
+      <a href="#">毛筆</a>
+      <a href="#">墨水</a>
+      <a href="#">客製化</a>
+      <hr>
+      <a href="#">願望清單</a>
+      <a href="#">購物車</a>
+      <a href="#">關於我們</a>
+    </div>
+    <div id="main">
+       <button class="openbtn" onclick="openNav()">☰ Open Contents</button>  
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  <!--  -->
+  <div class="header" id="myHeader">
+    <h2>&diams;鋼筆</h2>
+  </div>
+
+<div class="content">
+       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4">
             <div class="item">
-	         <a href="production-1.html">
+           <a href="production-1.html">
               <img src="assets/productimg/product1/1-1.jpg">
               <h3>SKB文明鋼筆-八熊堂系列鋼筆</h3>
               <p>NT1500</p>
@@ -147,8 +182,25 @@
           </div>
         </div>
       </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
  <!--換頁*****************************************************************-->
-      <nav aria-label="Page navigation example">
+      <div class="change_page">
         <ul class="pagination">
           <li class="page-item">
            <a class="page-link" href="#" aria-label="Previous">
@@ -166,11 +218,14 @@
            </a>
           </li>
         </ul>
-       </nav>
+      </div>
+<!--  -->
+
   <!--  *****************************************************************-->
 </article>
 <!--  -->
     <footer>
+      <img src="assets/image/logo.jpg" class="button_logo">
       <p>design by CYCU_IM </p>
     </footer>
 <!--  -->

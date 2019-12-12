@@ -37,6 +37,24 @@ body
 {
   padding: 10px;
 }
+/*search bar***************************************/
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
+}
 /*下拉選單nav******************************************/
 ul { /* 取消ul預設的內縮及樣式 */
   margin: 0;
@@ -147,8 +165,17 @@ nav
 /*aside*****************************************/
 
 /******************************************/
-footer
+footer p
 {
 	text-align: center;
 	margin-bottom: 1%;
+}
+.button_logo
+{
+  width: 200px;
+  height: 150px;
+  margin-left: 10%;
+  margin-top:4%;
+  margin-bottom: 1%;
+
 }
