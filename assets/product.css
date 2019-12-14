@@ -110,6 +110,7 @@
   margin-right:100px;
   margin-top: 70px;
   margin-bottom: 20px;
+  color: black;
 }
 
 /* Style the buttons inside the tab */
@@ -126,6 +127,7 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
+  opacity: 1;
   background-color: #ddd;
 }
 
@@ -150,10 +152,18 @@
 }
 .tabcontent img
 {
-	width: 1050px;
-	height: 700px;
-	text-align: center;
-	padding: 20px 40px;
+  width: 1050px;
+  height: 700px;
+  text-align: center;
+  padding: 20px 40px;
+}
+.tab button
+{
+  width: 130px;
+}
+.tablinks
+{
+  color: black;
 }
 /**/
 .Page

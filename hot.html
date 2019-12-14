@@ -14,13 +14,16 @@
 <!-- 我的css -->
 	    <link rel="stylesheet" type="text/css" href="assets/index.css">
 	    <link rel="stylesheet" type="text/css" href="assets/commodity.css">
+      <link rel="stylesheet" type="text/css" href="assets/hot.css">
 <!-- 我的css -->
 
 	</head>
 	<!-- ********************************************************************************** -->
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="#"><a href="index-1.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
+
+		  <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
+      
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -54,50 +57,57 @@
 		      </li>
 
 		    </ul>
-
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
+         <!-- 搜尋bar -->
+          <form>
+            <input type="text" name="search" placeholder="Search..">
+          </form>
           </div>
         </nav>
 
-<!--aside*************************************************************-->
-    <!-- <aside> 
-	    <ul class="nav flex-column">
-		  <li class="nav-item">
-		    <a class="nav-link active" href="#">促銷商品</a>
-		  </li>
-		 <li class="nav-item">
-		    <a class="nav-link" href="#">熱銷排行</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">鋼筆</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">鋼珠筆</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">原子筆</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">毛筆</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">墨水</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">客製化</a>
-		  </li>
-		</ul>
-    </aside>
-    -->
-
 <!--article******************************************************-->
 <article>
-	<div class="Contents"><a href="index-1.html">首頁</a>/熱銷排行榜/</div>
+  <!--側邊欄位、麵包屑-->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">首頁</a>
+      <hr>
+      <a href="commodity-1.html">鋼筆</a>
+      <a href="commodity-2.html">鋼珠筆</a>
+      <a href="commodity-3.html">原子筆</a>
+      <a href="commodity-4.html">毛筆</a>
+      <a href="commodity-5.html">墨水</a>
+      <a href="commodity-x.html">客製化</a>
+      <hr>
+      <a href="#">願望清單</a>
+      <a href="#">購物車</a>
+      <a href="#">關於我們</a>
+    </div>
 
- 	<h1>&hearts;熱銷商品排行榜</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <div id="main">
+           <p class="openbtn" onclick="openNav()">☰ Open list</p>
+          </div>
+        </li>
+        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+        <li class="breadcrumb-item active tit" aria-current="page">&diams;促銷熱銷</li>
+      </ol>
+    </nav>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  <!--  -->
+
+ 	<div class="hot_tit">&hearts;熱銷商品排行榜</div>
      <div class="container">
         <div class="row">
           <div class="col-12 col-md-4">
@@ -142,7 +152,7 @@
         </div>
 
       </div>
-     	<h1>&clubs;特惠商品</h1>
+     <div class="hot_tit">&hearts;限時特惠</div>
      <div class="container">
         <div class="row">
           <div class="col-12 col-md-4">
@@ -186,29 +196,8 @@
           </div>
         </div>
       </div>
- <!--換頁*****************************************************************-->
-      <!-- <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-           <a class="page-link" href="commodity-4.html" aria-label="Previous">
-             <span aria-hidden="true">&laquo;</span> 
-           </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="commodity-2.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="commodity-2.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="commodity-3.html">3</a></li>
-          <li class="page-item"><a class="page-link" href="commodity-4.html">4</a></li>
-          <li class="page-item"><a class="page-link" href="commodity-5.html">5</a></li>
-          <li class="page-item">
-           <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-           </a>
-          </li>
-        </ul>
-       </nav> -->
   <!--*****************************************************************-->
 </article>
-
 
 <!--  -->
     <footer>
