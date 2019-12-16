@@ -286,9 +286,13 @@ footer p
 }
 
 .DIV1{
-flex:2
+flex:3
 }
 
 .DIV2{
-flex:10
+flex:5
+}
+
+.DIV3{
+flex:4
 }
