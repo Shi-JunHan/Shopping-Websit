@@ -6,3 +6,109 @@
 	padding-bottom: 20px;
 	color:red;
 }
+
+/**/
+.table
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+/**/
+.top 
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+.top td
+{
+	padding: 20px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 10px;
+}
+.card h2
+{
+	font-size: 50px;
+	font-weight: 800;
+	color:red;
+}
+.card img:hover
+{
+  transform:scale(1.3,1.3);
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+/**/
+.top2
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+.top2 td
+{
+	padding: 20px;
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 10px;
+}
+.card2 h2
+{
+	font-size: 40px;
+	font-weight: 700;
+	color:red;
+}
+.card2 img:hover
+{
+  transform:scale(1.3,1.3);
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card2 button:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  -->
+    <!-- -->
+    <title>鋼好遇見你</title>
+    <!--  -->
+
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <!--  -->
+     <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- 我的css -->
+      <link rel="stylesheet" type="text/css" href="assets/index.css">
+      <link rel="stylesheet" type="text/css" href="assets/cart.css">
+<!-- 我的css -->
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+<!--下拉選單-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品專區
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="commodity-1.html">鋼筆</a>
+              <a class="dropdown-item" href="commodity-2.html">鋼珠筆</a>
+              <a class="dropdown-item" href="commodity-3.html">原子筆</a>
+              <a class="dropdown-item" href="commodity-4.html">毛筆</a>
+              <a class="dropdown-item" href="commodity-5.html">墨水</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="commodity-x.html">客製化鋼筆</a>
+            </div>
+<!-- -->          
+          <li class="nav-item active">
+            <a class="nav-link" href="hot.html">熱銷促銷 <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">會員專區
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <button class="dropdown-item" onclick="document.getElementById('id01').style.display='block'">會員登入
+              </button> 
+<!-- 登入表單 -->
+              <div id="id01" class="modal">
+             <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <h1>會員登入</h1>
+
+              <div class="container">
+                <label for="uname"><b>使用者名稱：</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>密碼：</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+           </div>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+
+<!--  -->
+            <button class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">會員註冊
+            </button>
+
+            <div id="id02" class="modal">
+              <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <form class="modal-content" action="/action_page.php">
+              <h1>會員註冊</h1>
+                <div class="container">
+                  <label for="email"><b>電子郵件：</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+
+                  <label for="psw"><b>密碼：</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <label for="psw-repeat"><b>重複密碼：</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+
+                  <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">願望清單</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">購物車</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+
+        </ul>
+        <!-- 搜尋bar -->
+          <form>
+            <input type="text" name="search" placeholder="Search..">
+          </form>
+
+          </div>
+        </nav>
+
+<!-- 購物車*****************************************************************-->
+    <article>
+<body>
+  <div class="container">
+   <div id="shopping-cart">
+    <h4 class="cart-title">購物清單</h4>
+     <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" @click="selectAll(isSelectAll)" v-bind:checked="isSelectAll"> 全選
+              </label>
+            </div>
+          </th>
+          <th>商品</th>
+          <th>數量</th>
+          <th>單價</th>
+          <th>金額（元）</th>
+          <th>取消</th>
+        </tr>
+     </thead>
+
+    <tbody>
+        <tr v-for="(item,index) in productList">
+          <td>
+            <label>
+              <input type="checkbox" @click="item.select=!item.select;console.log(item.select)" v-bind:checked="item.select">
+            </label>
+          </td>
+          <td>{{item.name}}</td>
+          <td>
+            <div class="product-num">
+            <a href="javascript:;" @click="item.num>0?item.num--:0">-</a>
+            <input type="text" class="num-input" v-model="item.num">
+            <a href="javascript:;" @click="item.num++">+</a>
+            </div>
+          </td>
+          <td>{{item.price}}</td>
+          <td>{{item.price*item.num}}</td>
+          <td><a href="javascript:;" @click="deleteProduct(index)">刪除</a></td>
+        </tr>
+        </tbody>
+     </table>
+
+     <div class="col-sm-2">
+        <span class="glyphicon glyphicon-trash"></span>
+        <label><a href="javascript:;" @click="deleteSelectedProduct">刪除所選商品</a></label>
+     </div>
+
+     </div>
+
+     <div class="col-sm-2">
+         <button type="button" class="btn btn-primary">去結算</button>
+     </div>
+  </div>
+</div>
+</body>
+
+<script>
+new Vue({
+    el:'#shopping-cart',
+    data:{
+        productList:[
+            {
+                'name': '&&&&&&鋼筆',//產品名稱
+                'num': 4,//數量
+                'price': 1980//單價
+            },
+                        {
+                'name': '%%%%%%%鋼筆',//產品名稱
+                'num': 2,//數量
+                'price': 1799//單價
+            },
+                        {
+                'name': '#######鋼筆',//產品名稱
+                'num': 3,//數量
+                'price': 1950//單價
+            }
+        ],
+    },
+    computed: {
+            isSelectAll:function(){
+                return this.productList.every(function (val) { return val.select});
+            },
+            getTotal:function(){
+                var list = this.productList.filter(function (item) {return item.select});
+                var totalPrice = 0;
+                var totalNum = 0;
+                for(var i=0,len=list.length;i<len;i++){
+            totalNum += list[i].num;
+            totalPrice += list[i].num*list[i].price;
+        }
+                return {totalNum:totalNum, totalPrice:totalPrice};
+            }
+        },
+    methods:{
+            selectAll:function(_isSelect){
+                for (var i = 0, len = this.productList.length; i < len; i++) {
+                    this.productList[i].select = !_isSelect;
+                }
+            },
+            deleteProduct:function(index){
+                this.productList.splice(index,1);
+            },
+            deleteSelectedProduct:function(){
+                this.productList=this.productList.filter(function (item) {return !item.select});
+            }
+    },
+    mounted:function () {
+            var _this=this;
+            //為productList新增select（是否選中）欄位，初始值為true
+            this.productList.map(function (item) {
+                _this.$set(item, 'select', false);
+            })
+        }
+})
+</script>
+    </article>
+<!--  -->
+    <footer>
+      <div class="DIV1">
+       <img src="assets/image/logo.jpg" class="button_logo">
+      </div>
+      <div class="DIV2">
+       <p></p>
+      </div>
+      <p>design by CYCU_IM </p>
+    </footer>
+<!--  -->
+
+<!--back to top-->
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<script type="text/javascript" src="assets/goto.js"></script>-->
+<!--  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

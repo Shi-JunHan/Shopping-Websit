@@ -216,6 +216,14 @@
 
 		<div id="Paris" class="tabcontent">
 		  <h3>商品評論</h3>
+　　<div class="commentTitle clearfix">
+      <div class="comment floatL">服務態度</div>
+      <div class="starBox" ref="star1">
+        <div class="star" v-for="(item,index) in starArr1" :key="index" @click="starClick1(index)">
+          <img :src="'../../static/images/'+item.imgSrc">
+        </div>
+      </div>
+    </div>
 
 		</div>
 
@@ -240,7 +248,21 @@
 		}
 		</script>
 
+<!--  -->
+<script type="text/javascript">
+starArr1: [{imgSrc: 'star1.png'}, {imgSrc: 'star1.png'}, {imgSrc: 'star1.png'}, {imgSrc: 'star1.png'}, {imgSrc: 'star1.png'}] //  變數
 
+starClick1 (index) {
+      this.starArr1.forEach((element, i) => {
+        this.$set(element, 'imgSrc', 'star1.png')
+        if (i <= index) {
+          this.$set(element, 'imgSrc', 'star2.png')
+        }
+      })
+      this.commentScore = index + 1 //  評價成績
+    }
+</script>
+<!--  -->
 		
 	</article>
    
