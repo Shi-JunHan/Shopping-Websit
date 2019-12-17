@@ -12,9 +12,9 @@
 		 <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- 我的css -->
-	    <link rel="stylesheet" type="text/css" href="assets/index.css">
-	    <link rel="stylesheet" type="text/css" href="assets/commodity.css">
-	    <link rel="stylesheet" type="text/css" href="assets/product.css">
+	    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	    <link rel="stylesheet" type="text/css" href="assets/css/commodity.css">
+	    <link rel="stylesheet" type="text/css" href="assets/css/product.css">
 <!-- 我的css -->
 
 	</head>
@@ -76,21 +76,20 @@
         </nav>
 <!--article******************************************************-->
 	<article>
-<!--側邊欄位、麵包屑-->
+ <!--側邊欄位、麵包屑-->
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="#">首頁</a>
+      <a href="index.html">首頁</a>
       <hr>
-      <a href="#">鋼筆</a>
-      <a href="#">鋼珠筆</a>
-      <a href="#">原子筆</a>
-      <a href="#">毛筆</a>
-      <a href="#">墨水</a>
-      <a href="#">客製化</a>
+      <a href="commodity-1.html">鋼筆</a>
+      <a href="commodity-2.html">鋼珠筆</a>
+      <a href="commodity-3.html">原子筆</a>
+      <a href="commodity-4.html">毛筆</a>
+      <a href="commodity-5.html">墨水</a>
       <hr>
-      <a href="#">願望清單</a>
-      <a href="#">購物車</a>
-      <a href="#">關於我們</a>
+      <a href="hope.html">願望清單</a>
+      <a href="cart.html">購物車</a>
+      <a href="about.html">關於我們</a>
     </div>
 
     <nav aria-label="breadcrumb">
@@ -103,21 +102,14 @@
         <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
         <li class="breadcrumb-item">商品專區</li>
         <li class="breadcrumb-item"><a href="commodity-1.html">&diams;鋼筆</a></li>
-        <li class="breadcrumb-item active tit" aria-current="page">KB文明鋼筆-八熊堂系列鋼筆</li>
+        <li class="breadcrumb-item active tit" aria-current="page">八熊堂系列鋼筆</li>
       </ol>
     </nav>
 
-    <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-    }
-    </script>
-<!--end slide-->
+    <!-- js:openlist.js -->
+    <script type="text/javascript" src="assets/js/openlist.js"></script>
+
+<!--麵包屑end-->
 
 <!-- content**************************************************************** -->	   
 		<table class="table">
@@ -217,6 +209,39 @@
 		<div id="Paris" class="tabcontent">
 		  <h3>商品評論</h3>
 
+		  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required >
+          <h6>暱稱:</h6> <input type="text" name="fname">
+
+		 <textarea style="width:500px;height:200px;">
+		　輸入你的評論：
+		 </textarea>
+
+		 <input type="submit" value="Submit">
+		  
+		  <script>
+			function validateForm() {
+			  var x = document.forms["myForm"]["fname"].value;
+			  if (x == "" || x == null) {
+			    alert("您的評論已送出");
+			    return false;
+			  }
+			}
+		  </script>
+<!--星星****************************************-->
+	<h6>商品評價:</h6>
+		<div class="star-rating">
+		  <input type="radio" id="5-stars" name="rating" value="5" />
+		  <label for="5-stars" class="star">&#9733;</label>
+		  <input type="radio" id="4-stars" name="rating" value="4" />
+		  <label for="4-stars" class="star">&#9733;</label>
+		  <input type="radio" id="3-stars" name="rating" value="3" />
+		  <label for="3-stars" class="star">&#9733;</label>
+		  <input type="radio" id="2-stars" name="rating" value="2" />
+		  <label for="2-stars" class="star">&#9733;</label>
+		  <input type="radio" id="1-star" name="rating" value="1" />
+		  <label for="1-star" class="star">&#9733;</label>
+		</div>
+<!-- **************************************** -->
 		</div>
 
 		<div id="Tokyo" class="tabcontent">
@@ -246,13 +271,24 @@
    
 <!--footer******************************************************-->
     <footer>
-      <div class="DIV1">
-       <img src="assets/image/logo.jpg" class="button_logo">
-      </div>
-      <div class="DIV2">
-       <p></p>
-      </div>
-      <p>design by CYCU_IM </p>
+      <table class="foot">
+        <tr>
+          <td><img src="assets/image/logo.jpg" class="button_logo"></td>
+          <td>
+            <p><img src="assets/icon/factory.jpg" class="foot_icon">廠牌：SKB文明鋼筆、Pentel飛龍文具</p>
+            <p><img src="assets/icon/telephone.jpg" class="foot_icon">客服專線：0800-000789</p>
+            <p><img src="assets/icon/address.jpg" class="foot_icon">地址320桃園市中壢區中北路200號</p>
+            <p><img src="assets/icon/saying.jpg" class="foot_icon"> information management pen shop~</p>
+          </td>
+          <td>
+            
+            <img src="assets/image/skblogo.jpg" class="fact_logo">
+            <img src="assets/image/pentellogo.jpg" class="fact_logo">
+
+          </td>
+        </tr>
+      </table>
+      <h6>design by CYCU_IM_1st </h6>
     </footer>
 <!--  -->
 

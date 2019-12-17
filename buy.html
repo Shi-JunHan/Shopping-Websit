@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		<!-- -->
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  -->
-		<!-- -->
-		<title>鋼好遇見你-毛筆目錄</title>
-		
-		 <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  -->
+    <!-- -->
+    <title>鋼好遇見你</title>
+    <!--  -->
+
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <!--  -->
+     <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- 我的css -->
-	    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-	    <link rel="stylesheet" type="text/css" href="assets/css/commodity.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/buy.css">
 <!-- 我的css -->
 
-	</head>
-	<!-- ********************************************************************************** -->
-	<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,11 +49,11 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">會員專區
             </a>
-<!-- 登入表單 *****-->
+
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <button class="dropdown-item" onclick="document.getElementById('id01').style.display='block'">會員登入
               </button> 
-
+<!-- 登入表單 -->
               <div id="id01" class="modal">
              <form class="modal-content animate" action="/action_page.php" method="post">
               <div class="imgcontainer">
@@ -81,6 +84,7 @@
            <!-- js:lgoin -->
            <script type="text/javascript" src="assets/js/login.js"></script>
 
+<!--  -->
             <button class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">會員註冊
             </button>
 
@@ -112,7 +116,6 @@
 
            <!-- js:lgoin -->
            <script type="text/javascript" src="assets/js/login.js"></script>
-<!--  -->
           
           <li class="nav-item">
             <a class="nav-link" href="hope.html">願望清單</a>
@@ -134,129 +137,81 @@
 
           </div>
         </nav>
-<!--article******************************************************-->
-<article>
 
-  <!--側邊欄位、麵包屑-->
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="index.html">首頁</a>
-      <hr>
-      <a href="commodity-1.html">鋼筆</a>
-      <a href="commodity-2.html">鋼珠筆</a>
-      <a href="commodity-3.html">原子筆</a>
-      <a href="commodity-4.html">毛筆</a>
-      <a href="commodity-5.html">墨水</a>
-      <hr>
-      <a href="hope.html">願望清單</a>
-      <a href="cart.html">購物車</a>
-      <a href="about.html">關於我們</a>
-    </div>
+<!-- 購物車*****************************************************************-->
+    <article>
+      
+      <h1 class="title">付款資訊</h1>
+      <hr color="black" width="80%" size="4"></div>
 
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <div id="main">
-           <p class="openbtn" onclick="openNav()">☰ Open list</p>
-          </div>
-        </li>
-        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-        <li class="breadcrumb-item">商品專區</li>
-        <li class="breadcrumb-item active tit" aria-current="page">&diams;毛筆</li>
-      </ol>
-    </nav>
+<table class="all">
+  <tr>
+    <td>
+      <div class="leftpart">
+        <div class="fontletter">姓氏<br></div>
+        <br>
+        <input type="text" name="firstname"size="25" style="height: 20px;">
+        <br>
+        <br>
+        <div class="fontletter">名字<br></div>
+        <br>
+        <input type="text" name="lastname"  size="25"style="height: 20px;">
+        <br>
+        <br>
 
-    <!-- js:openlist.js -->
-    <script type="text/javascript" src="assets/js/openlist.js"></script>
+        <div class="fontletter">行動電話</div>
+        <br>
+        <input type="text" name="phone" size="25"style="height: 20px;" >
+        <br>
+        <br>
+        <div class="fontletter">超商 / 住址</div>
 
-<!--麵包屑end-->
-
-  <!--  -->
-
-
-     <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="item">
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="item">
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="item">
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            <a href="production-1.html">
-              <img src="assets/productimg/product7/7-1.jpg">
-              <h3>Pentel-卡式毛筆</h3>
-              <p>NT:360</p>
-            </a>
-            </div>
-          </div>
-        </div>
+        <br>
+        <input type="text" name="address" size="55"style="height: 20px;">
+        <br> 
       </div>
- <!--換頁*****************************************************************-->
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-           <a class="page-link" href="commodity-3.html" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-           </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="commodity-2.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="commodity-2.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="commodity-3.html">3</a></li>
-          <li class="page-item"><a class="page-link" href="commodity-4.html">4</a></li>
-          <li class="page-item"><a class="page-link" href="commodity-5.html">5</a></li>
-          <li class="page-item">
-           <a class="page-link" href="commodity-5.html" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-           </a>
-          </li>
-        </ul>
-       </nav>
-  <!--*****************************************************************-->
-</article>
+    </td>
+   
+    <td>
+    <div class="rightpart">
+        <table>
+            <caption class="tablef1">運送方式:</caption>
+            <tr>
+                <td><img src="assets/image/7-11.png"width="160" height="160"></td>
+                <td><img src="assets/image/family.png"width="160" height="160"></td>
+                <td><img src="assets/image/cat.jpg"width="160" height="160"></td>
+            </tr>
+            <tr>
+                <td class="radio"><input type="radio" name="r1" value="7-11"></td>
+                <td class="radio"><input type="radio" name="r1" value="family"></td>
+                <td class="radio"><input type="radio" name="r1" value="cat" style='width: 20px;'></td>
+            </tr>
+        </table>
+        
+        <table>
+        <caption class="tablef1">付款方式:</caption>    
+
+        <tr>
+            <td><img src="assets/image/cash.png" width="160" height="160"></td>
+            <td><img src="assets/image/visa.jpg" width="160" height="160"></td>
+            <td><img src="assets/image/paypal.png"width="160" height="160"></td>
+        </tr>
+        <tr><td class="radio"><input type="radio" name="r2" ></td>
+            <td class="radio"><input type="radio" name="r2" ></td>
+            <td class="radio"><input type="radio" name="r2" ></td>
+
+        </tr>
+        </table>
+    </div>
+    </td>
+  </tr>
+
+</table>
+
+
+       <input type="button" value="送出訂單" onclick="alert('訂單已送出，感謝您的惠顧ヽ(✿ﾟ▽ﾟ)ノ')" class="btn_buy">
+   
+
 <!--  -->
     <footer>
       <table class="foot">
@@ -281,8 +236,8 @@
 <!--  -->
 
 <!--back to top-->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
-<script type="text/javascript" src="assets/js/goto.js"></script>
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<script type="text/javascript" src="assets/goto.js"></script>-->
 <!--  -->
 
     <!-- Optional JavaScript -->
@@ -290,5 +245,5 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	</body>
+  </body>
 </html>

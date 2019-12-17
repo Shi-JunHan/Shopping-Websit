@@ -12,37 +12,35 @@
 		 <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- 我的css -->
-	    <link rel="stylesheet" type="text/css" href="assets/index.css">
-      <link rel="stylesheet" type="text/css" href="assets/about.css">
+	    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/about.css">
 <!-- 我的css -->
 
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
 <!--下拉選單-->
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品專區
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="commodity-1.html">鋼筆</a>
-		          <a class="dropdown-item" href="commodity-2.html">鋼珠筆</a>
-		          <a class="dropdown-item" href="commodity-3.html">原子筆</a>
-		          <a class="dropdown-item" href="commodity-4.html">毛筆</a>
-		          <a class="dropdown-item" href="commodity-5.html">墨水</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="commodity-x.html">客製化鋼筆</a>
-		        </div>
-<!-- -->		      
-		      <li class="nav-item active">
-		        <a class="nav-link" href="hot.html">熱銷促銷 <span class="sr-only">(current)</span></a>
-		      </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品專區
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="commodity-1.html">鋼筆</a>
+              <a class="dropdown-item" href="commodity-2.html">鋼珠筆</a>
+              <a class="dropdown-item" href="commodity-3.html">原子筆</a>
+              <a class="dropdown-item" href="commodity-4.html">毛筆</a>
+              <a class="dropdown-item" href="commodity-5.html">墨水</a>
+            </div>
+<!-- -->          
+          <li class="nav-item active">
+            <a class="nav-link" href="hot.html">熱銷促銷 <span class="sr-only">(current)</span></a>
+          </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">會員專區
@@ -79,17 +77,8 @@
             </form>
            </div>
 
-            <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-            </script>
+           <!-- js:lgoin -->
+           <script type="text/javascript" src="assets/js/login.js"></script>
 
 <!--  -->
             <button class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">會員註冊
@@ -121,31 +110,22 @@
               </form>
             </div>
 
-            <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-            </script>
-		      
+           <!-- js:lgoin -->
+           <script type="text/javascript" src="assets/js/login.js"></script>
+          
           <li class="nav-item">
             <a class="nav-link" href="#">願望清單</a>
           </li>
 
-		      <li class="nav-item">
-		        <a class="nav-link" href="cart.html">購物車</a>
-		      </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#">關於我們</a>
+            <a class="nav-link" href="cart.html">購物車</a>
           </li>
 
-		    </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">關於我們</a>
+          </li>
+
+        </ul>
         <!-- 搜尋bar -->
           <form>
             <input type="text" name="search" placeholder="Search..">
@@ -167,10 +147,10 @@
           <p>資管二甲10744128</p>
           <table>
             <tr>
-              <td><img src="assets/icon/facebook.jpg"></td>
-              <td><img src="assets/icon/instagram.jpg"></td>
-              <td><img src="assets/icon/github.jpg"></td>
-              <td><img src="assets/icon/web.jpg"></td>
+              <td><a href="https://www.facebook.com/profile.php?id=100003691513115"><img src="assets/icon/facebook.jpg"></a></td>
+              <td><a href="https://www.instagram.com/jhan__621/"><img src="assets/icon/instagram.jpg"></a></td>
+              <td><a href="https://github.com/Shi-JunHan"><img src="assets/icon/github.jpg"></a></td>
+              <td><a href="https://shi-junhan.github.io/Jin10744128web.github.io/"><img src="assets/icon/web.jpg"></a></td>
             </tr>
           </table>
 
@@ -183,17 +163,17 @@
           <img src="assets/image/about-2.jpg" class="about-x">
           <h1>鄧永瀚</h1>
           <p class="title">網頁前端</p>
-          <p>資管二甲10744128</p>
+          <p>資管二甲10740129</p>
           <table>
             <tr>
-              <td><img src="assets/icon/facebook.jpg"></td>
-              <td><img src="assets/icon/instagram.jpg"></td>
-              <td><img src="assets/icon/github.jpg"></td>
-              <td><img src="assets/icon/web.jpg"></td>
+              <td><a href="https://www.facebook.com/profile.php?id=100003368986202"><img src="assets/icon/facebook.jpg"></a></td>
+              <td><a href="https://www.instagram.com/yonghan_/"><img src="assets/icon/instagram.jpg"></a></td>
+              <td><a href="https://github.com/hank8913"><img src="assets/icon/github.jpg"></a></td>
+              <td><a href="https://hank8913.github.io/han/"><img src="assets/icon/web.jpg"></a></td>
             </tr>
           </table>
 
-          <a href="mailto:J12708389j@gmail.com"><p><button>Contact</button></p>
+          <a href="mailto:hank8913@gmail.com"><p><button>Contact</button></p>
           </a>
         </div>       
       </td>
@@ -202,16 +182,16 @@
           <img src="assets/image/about-3.jpg" class="about-x">
           <h1>侯家燊</h1>
           <p class="title">網頁後端</p>
-          <p>資管二乙10744228</p>
+          <p>資管二乙10740135</p>
           <table>
             <tr>
-              <td><img src="assets/icon/facebook.jpg"></td>
-              <td><img src="assets/icon/instagram.jpg"></td>
-              <td><img src="assets/icon/github.jpg"></td>
+              <td><a href="https://www.facebook.com/profile.php?id=100007164345956&ref=bookmarks"><img src="assets/icon/facebook.jpg"></a></td>
+              <td><a href="http://instagram.com/ethanhou_880913"><img src="assets/icon/instagram.jpg"></a></td>
+              <td><a href=""><img src="assets/icon/github.jpg"></a></td>
             </tr>
           </table>
 
-          <a href="mailto:J12708389j@gmail.com"><p><button>Contact</button></p>
+          <a href="ethanhou19990913@gmail.com"><p><button>Contact</button></p>
           </a>
         </div>
       </td>
@@ -223,33 +203,40 @@
           <p>資管二乙10744228</p>
           <table>
             <tr>
-              <td><img src="assets/icon/facebook.jpg"></td>
-              <td><img src="assets/icon/instagram.jpg"></td>
-              <td><img src="assets/icon/github.jpg"></td>
+              <td><a href="https://www.facebook.com/pinghung.tais"><img src="assets/icon/facebook.jpg"></a></td>
+              <td><a href="https://www.instagram.com/ping2111m8/"><img src="assets/icon/instagram.jpg"></a></td>
+              <td><a href="https://github.com/ping2111m8"><img src="assets/icon/github.jpg"></a></td>
             </tr>
           </table>
 
-          <a href="mailto:J12708389j@gmail.com"><p><button>Contact</button></p>
+          <a href="mailto:ping2111m8@gmail.com"><p><button>Contact</button></p>
           </a>
         </div>
       </td>
     </tr>
-    <tr>
-      
-      
-    </tr> 
 </table>
 
     </article>
 <!--  -->
     <footer>
-      <div class="DIV1">
-       <img src="assets/image/logo.jpg" class="button_logo">
-      </div>
-      <div class="DIV2">
-       <p></p>
-      </div>
-      <p>design by CYCU_IM </p>
+      <table class="foot">
+        <tr>
+          <td><img src="assets/image/logo.jpg" class="button_logo"></td>
+          <td>
+            <p><img src="assets/icon/factory.jpg" class="foot_icon">廠牌：SKB文明鋼筆、Pentel飛龍文具</p>
+            <p><img src="assets/icon/telephone.jpg" class="foot_icon">客服專線：0800-000789</p>
+            <p><img src="assets/icon/address.jpg" class="foot_icon">地址320桃園市中壢區中北路200號</p>
+            <p><img src="assets/icon/saying.jpg" class="foot_icon"> information management pen shop~</p>
+          </td>
+          <td>
+            
+            <img src="assets/image/skblogo.jpg" class="fact_logo">
+            <img src="assets/image/pentellogo.jpg" class="fact_logo">
+
+          </td>
+        </tr>
+      </table>
+      <h6>design by CYCU_IM_1st </h6>
     </footer>
 <!--  -->
 

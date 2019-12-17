@@ -12,8 +12,8 @@
 		 <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- 我的css -->
-	    <link rel="stylesheet" type="text/css" href="assets/index.css">
-	    <link rel="stylesheet" type="text/css" href="assets/commodity.css">
+	    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	    <link rel="stylesheet" type="text/css" href="assets/css/commodity.css">
 <!-- 我的css -->
 
 	</head>
@@ -29,7 +29,7 @@
         <ul class="navbar-nav mr-auto">
 <!--下拉選單-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部商品
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品專區
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="commodity-1.html">鋼筆</a>
@@ -37,28 +37,101 @@
               <a class="dropdown-item" href="commodity-3.html">原子筆</a>
               <a class="dropdown-item" href="commodity-4.html">毛筆</a>
               <a class="dropdown-item" href="commodity-5.html">墨水</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="commodity-x.html">客製化鋼筆</a>
             </div>
 <!-- -->          
           <li class="nav-item active">
             <a class="nav-link" href="hot.html">熱銷促銷 <span class="sr-only">(current)</span></a>
           </li>
 
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">會員專區
+            </a>
+<!-- 登入表單 *****-->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <button class="dropdown-item" onclick="document.getElementById('id01').style.display='block'">會員登入
+              </button> 
+
+              <div id="id01" class="modal">
+             <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <h1>會員登入</h1>
+
+              <div class="container">
+                <label for="uname"><b>使用者名稱：</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>密碼：</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+           </div>
+
+           <!-- js:lgoin -->
+           <script type="text/javascript" src="assets/js/login.js"></script>
+
+            <button class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">會員註冊
+            </button>
+
+            <div id="id02" class="modal">
+              <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <form class="modal-content" action="/action_page.php">
+              <h1>會員註冊</h1>
+                <div class="container">
+                  <label for="email"><b>電子郵件：</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+
+                  <label for="psw"><b>密碼：</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <label for="psw-repeat"><b>重複密碼：</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+
+                  <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+           <!-- js:lgoin -->
+           <script type="text/javascript" src="assets/js/login.js"></script>
+<!--  -->
+          
           <li class="nav-item">
-            <a class="nav-link" href="membership.html">會員專區</a>
+            <a class="nav-link" href="hope.html">願望清單</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">購物車</a>
+            <a class="nav-link" href="cart.html">購物車</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">關於我們</a>
           </li>
 
         </ul>
-
         <!-- 搜尋bar -->
           <form>
             <input type="text" name="search" placeholder="Search..">
           </form>
+
           </div>
         </nav>
 
@@ -76,9 +149,9 @@
       <a href="commodity-5.html">墨水</a>
       <a href="commodity-x.html">客製化</a>
       <hr>
-      <a href="#">願望清單</a>
-      <a href="#">購物車</a>
-      <a href="#">關於我們</a>
+      <a href="hope.html">願望清單</a>
+      <a href="cart.html">購物車</a>
+      <a href="about.html">關於我們</a>
     </div>
 
     <nav aria-label="breadcrumb">
@@ -94,57 +167,67 @@
       </ol>
     </nav>
 
-    <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-    }
-    </script>
+    <!-- js:openlist.js -->
+    <script type="text/javascript" src="assets/js/openlist.js"></script>
   <!--  -->
 	
      <div class="container">
         <div class="row">
           <div class="col-12 col-md-4">
             <div class="item">
+            <a href="production-1.html">
               <img src="assets/productimg/product5/5-1.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT770</p>
+            </a>
+            <a href="production-1.html">
               <img src="assets/productimg/product1/5-2.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT900</p>
+            </a>
+            <a href="production-1.html">
               <img src="assets/productimg/product5/5-1.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT1200</p>
+            </a>
             </div>
           </div>
           <div class="col-12 col-md-4">
             <div class="item">
+            <a href="production-1.html">
               <img src="assets/productimg/product5/5-2.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT900</p>
+            </a>
+            <a href="production-1.html">
               <img src="assets/productimg/product5/5-2.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT700</p>
+            </a>
+            <a href="production-1.html">
               <img src="assets/productimg/product5/5-2.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT200</p>
+            </a>
             </div>
           </div>
           <div class="col-12 col-md-4">
             <div class="item">
+            <a href="production-1.html">
               <img src="assets/productimg/product5/5-3.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT700</p>
+            </a>
+            <a href="production-1.html">
               <img src="assets/productimg/product5/5-3.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT200</p>
+            </a>
+            <a href="production-1.html">
               <img src="assets/productimg/product5/5-3.jpg">
               <h3>SKB文明鋼筆 馬卡龍系列鋼珠筆(5色)</h3>
               <p>NT2700</p>
+            </a>
             </div>
           </div>
         </div>
@@ -173,13 +256,30 @@
 </article>
 <!--  -->
     <footer>
-      <p>design by CYCU_IM </p>
+      <table class="foot">
+        <tr>
+          <td><img src="assets/image/logo.jpg" class="button_logo"></td>
+          <td>
+            <p><img src="assets/icon/factory.jpg" class="foot_icon">廠牌：SKB文明鋼筆、Pentel飛龍文具</p>
+            <p><img src="assets/icon/telephone.jpg" class="foot_icon">客服專線：0800-000789</p>
+            <p><img src="assets/icon/address.jpg" class="foot_icon">地址320桃園市中壢區中北路200號</p>
+            <p><img src="assets/icon/saying.jpg" class="foot_icon"> information management pen shop~</p>
+          </td>
+          <td>
+            
+            <img src="assets/image/skblogo.jpg" class="fact_logo">
+            <img src="assets/image/pentellogo.jpg" class="fact_logo">
+
+          </td>
+        </tr>
+      </table>
+      <h6>design by CYCU_IM_1st </h6>
     </footer>
 <!--  -->
 
 <!--back to top-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
-<script type="text/javascript" src="assets/goto.js"></script>
+<script type="text/javascript" src="assets/js/goto.js"></script>
 <!--  -->
 
     <!-- Optional JavaScript -->
