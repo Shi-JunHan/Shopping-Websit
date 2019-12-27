@@ -13,7 +13,10 @@
 {
   text-align: center;
 }
-
+body
+{
+  background-color: #FFFBF7;
+}
 
 /*article****************************/
 /*麵包屑、側邊欄位＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/

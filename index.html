@@ -16,39 +16,38 @@
 <!-- 我的css -->
 
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+	<body>   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
 <!--下拉選單-->
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品專區
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="commodity-1.html">鋼筆</a>
-		          <a class="dropdown-item" href="commodity-2.html">鋼珠筆</a>
-		          <a class="dropdown-item" href="commodity-3.html">原子筆</a>
-		          <a class="dropdown-item" href="commodity-4.html">毛筆</a>
-		          <a class="dropdown-item" href="commodity-5.html">墨水</a>
-		        </div>
-<!-- -->		      
-		      <li class="nav-item active">
-		        <a class="nav-link" href="hot.html">熱銷促銷 <span class="sr-only">(current)</span></a>
-		      </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品專區
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="commodity-1.html">鋼筆</a>
+              <a class="dropdown-item" href="commodity-2.html">鋼珠筆</a>
+              <a class="dropdown-item" href="commodity-3.html">原子筆</a>
+              <a class="dropdown-item" href="commodity-4.html">毛筆</a>
+              <a class="dropdown-item" href="commodity-5.html">墨水</a>
+            </div>
+<!-- -->          
+          <li class="nav-item active">
+            <a class="nav-link" href="hot.html">熱銷促銷 <span class="sr-only">(current)</span></a>
+          </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">會員專區
             </a>
-
+<!-- 登入表單 *****-->
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <button class="dropdown-item" onclick="document.getElementById('id01').style.display='block'">會員登入
               </button> 
-<!-- 登入表單 -->
+
               <div id="id01" class="modal">
              <form class="modal-content animate" action="/action_page.php" method="post">
               <div class="imgcontainer">
@@ -75,11 +74,10 @@
               </div>
             </form>
            </div>
+
            <!-- js:lgoin -->
            <script type="text/javascript" src="assets/js/login.js"></script>
 
-
-<!--  -->
             <button class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">會員註冊
             </button>
 
@@ -111,20 +109,21 @@
 
            <!-- js:lgoin -->
            <script type="text/javascript" src="assets/js/login.js"></script>
-		      
+<!--  -->
+          
           <li class="nav-item">
-            <a class="nav-link" href="#">願望清單</a>
+            <a class="nav-link" href="hope.html">願望清單</a>
           </li>
 
-		      <li class="nav-item">
-		        <a class="nav-link" href="cart.html">購物車</a>
-		      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">購物車</a>
+          </li>
 
           <li class="nav-item">
             <a class="nav-link" href="about.html">關於我們</a>
           </li>
 
-		    </ul>
+        </ul>
         <!-- 搜尋bar -->
           <form>
             <input type="text" name="search" placeholder="Search..">
