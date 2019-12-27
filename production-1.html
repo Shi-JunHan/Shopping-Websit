@@ -21,52 +21,113 @@
 	<!-- ********************************************************************************** -->
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+      <a class="navbar-brand" href="#"><a href="index.html"><img src="assets/image/logo.jpg" class="logo"></a></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
 <!--下拉選單-->
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品專區
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="commodity-1.html">鋼筆</a>
-		          <a class="dropdown-item" href="commodity-2.html">鋼珠筆</a>
-		          <a class="dropdown-item" href="commodity-3.html">原子筆</a>
-		          <a class="dropdown-item" href="commodity-4.html">毛筆</a>
-		          <a class="dropdown-item" href="commodity-5.html">墨水</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="commodity-x.html">客製化鋼筆</a>
-		        </div>
-<!-- -->		      
-		      <li class="nav-item active">
-		        <a class="nav-link" href="hot.html">熱銷促銷 <span class="sr-only">(current)</span></a>
-		      </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品專區
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="commodity-1.html">鋼筆</a>
+              <a class="dropdown-item" href="commodity-2.html">鋼珠筆</a>
+              <a class="dropdown-item" href="commodity-3.html">原子筆</a>
+              <a class="dropdown-item" href="commodity-4.html">毛筆</a>
+              <a class="dropdown-item" href="commodity-5.html">墨水</a>
+            </div>
+<!-- -->          
+          <li class="nav-item active">
+            <a class="nav-link" href="hot.html">熱銷促銷 <span class="sr-only">(current)</span></a>
+          </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">會員專區
             </a>
+<!-- 登入表單 *****-->
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="＃">會員註冊</a>
-              <a class="dropdown-item" href="＃">會員登入</a>
+              <button class="dropdown-item" onclick="document.getElementById('id01').style.display='block'">會員登入
+              </button> 
+
+              <div id="id01" class="modal">
+             <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <h1>會員登入</h1>
+
+              <div class="container">
+                <label for="uname"><b>使用者名稱：</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>密碼：</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+           </div>
+
+           <!-- js:lgoin -->
+           <script type="text/javascript" src="assets/js/login.js"></script>
+
+            <button class="dropdown-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">會員註冊
+            </button>
+
+            <div id="id02" class="modal">
+              <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <form class="modal-content" action="/action_page.php">
+              <h1>會員註冊</h1>
+                <div class="container">
+                  <label for="email"><b>電子郵件：</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+
+                  <label for="psw"><b>密碼：</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <label for="psw-repeat"><b>重複密碼：</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+
+                  <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+                </div>
+              </form>
             </div>
-		      
+
+           <!-- js:lgoin -->
+           <script type="text/javascript" src="assets/js/login.js"></script>
+<!--  -->
+          
           <li class="nav-item">
-            <a class="nav-link" href="#">願望清單</a>
+            <a class="nav-link" href="hope.html">願望清單</a>
           </li>
 
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">購物車</a>
-		      </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#">關於我們</a>
+            <a class="nav-link" href="cart.html">購物車</a>
           </li>
 
-		    </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">關於我們</a>
+          </li>
+
+        </ul>
         <!-- 搜尋bar -->
           <form>
             <input type="text" name="search" placeholder="Search..">
@@ -139,22 +200,30 @@
             <table>
               <tr>
               	<td>
-		          <div class="dropdown">
-					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">數量
+              	  <table class="insidetb">	
+              	   <tr>
+              	    <td><input type='button' value='-' class='qtyminus' field='quantity'/></td>
+				   <td><input type='text' name='quantity' value='0' class='textquity'/>
+				   </td>
+				   <td><input type='button' value='+' class='qtyplus' field='quantity'/>
+				   	</td>
+				   </tr>
+				  </table>
+					<!-- 數量加減javascript -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script type="text/javascript" src="assets/js/count.js"></script>
+                    <!--  -->
+			    </td>
+			    <td>
+		           <div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">顏色
 					  </button>
 						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="#">1</a>
-						    <a class="dropdown-item" href="#">2</a>
-						    <a class="dropdown-item" href="#">3</a>
-						    <a class="dropdown-item" href="#">4</a>
-						    <a class="dropdown-item" href="#">5</a>
-						    <a class="dropdown-item" href="#">6</a>
-						    <a class="dropdown-item" href="#">7</a>
-						    <a class="dropdown-item" href="#">8</a>
-						    <a class="dropdown-item" href="#">9</a>
-						    <a class="dropdown-item" href="#">10+</a>
+						    <a class="dropdown-item" href="#">黑</a>
+						    <a class="dropdown-item" href="#">白</a>
+						    <a class="dropdown-item" href="#">紅</a>
 						  </div>
-				      </div>
+				    </div>			        
 			    </td>
 			    <td>
 			      <button class="hope_btn">加到願望清單
@@ -188,7 +257,6 @@
 		<div class="tab">
 		  <button class="tablinks" onclick="openCity(event, 'London')">商品介紹</button>
 		  <button class="tablinks" onclick="openCity(event, 'Paris')">商品評論</button>
-		  <button class="tablinks" onclick="openCity(event, 'Tokyo')">類似商品</button>
 		</div>
 
 		<div id="London" class="tabcontent">
@@ -244,10 +312,6 @@
 <!-- **************************************** -->
 		</div>
 
-		<div id="Tokyo" class="tabcontent">
-		  <h3>類似商品</h3>
-		  <p>one two three</p>
-		</div>
 
 		<script>
 		function openCity(evt, cityName) {
