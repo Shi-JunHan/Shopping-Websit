@@ -245,6 +245,17 @@ input.qtyminus {
   width: 30px;
   height: 30px;
 }
+.coll
+{
+  border:solid 1px;
+  width: 800px;
+  padding: 20px;
+}
+.starpost
+{
+  font-size: 40px;
+  margin-left: 10%;
+}
 /**/
 .Page
 {
